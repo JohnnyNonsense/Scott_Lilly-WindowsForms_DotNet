@@ -141,7 +141,6 @@
             this.cboWeapons.Name = "cboWeapons";
             this.cboWeapons.Size = new System.Drawing.Size(121, 21);
             this.cboWeapons.TabIndex = 16;
-
             // 
             // cboPotions
             // 
@@ -289,6 +288,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SuperAdventure";
             this.Text = "My Game";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SuperAdventure_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).EndInit();
             this.ResumeLayout(false);
